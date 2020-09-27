@@ -13,7 +13,7 @@ export default function Home({ data }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   // Call an external API endpoint to get posts
   const res = await fetch("https://aloysius-server.herokuapp.com/hello");
   const data = await res.json();
